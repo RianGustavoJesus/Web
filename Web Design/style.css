@@ -274,6 +274,52 @@ form .conjunto {
     display: block;
     font-weight: bold;
 }
+
+.areaarte {
+    display: grid;
+    height: -10vh;
+    place-items: center;
+}
+
+.boxarte {
+    position: auto;
+
+    animation-name: movimento;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-delay: 400ms;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+
+.boxarte:hover {
+    background-color: rebeccapurple;
+    border-radius: 50%;
+}
+
+/*
+.areaarte img {
+    transform: translateX(100px) scale(1.5) rotate(-35deg) skew(-30deg);
+}
+*/
+
+@keyframes movimento {
+    from {
+        transform: translate(0, 0);
+    }
+
+    50% {
+        transform: translateX(200%, -50px);
+    }
+
+    to {
+        transform: translate(80vw, 0);
+    }
+}
+
+
+
     
 
 
