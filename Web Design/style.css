@@ -128,7 +128,7 @@ nav li ul li {
 }
 
 nav {
-    position: absolute;
+    position: static;
     top: 90px;
     right: 0px;
 }
@@ -241,5 +241,40 @@ form input, form textarea {
 .checkbox {
     margin: 20px 0;
 }
+
+@media screen and (max-width: 480px) {
+    body {
+        background: red;
+    }
+
+}
+
+main, .caixa, .principal, .beneficios, .mapa, .video {
+    width: auto;
+}
+
+.rodape {
+    width: 300px;
+}
+
+.beneficios, .imagembeneficios {
+    width: 100%;
+}
+
+form .conjunto {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.certeza {
+    display: none;
+}
+
+#radio-telefone:checked ~ .certeza {
+    display: block;
+    font-weight: bold;
+}
+    
+
 
 
